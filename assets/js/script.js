@@ -37,6 +37,11 @@ function ejercicio1() {
 
 function ejercicio2() {
     document.write("<h1>Ejercicio2</h1>");
+    var color;
+    do {
+        color = prompt("De que color es el caballo blanco de Napoleon", "");
+    } while (color != 'blanco');
+    document.write("<p>El caballo es blanco :)</p>");
 }
 
 function ejercicio3() {
