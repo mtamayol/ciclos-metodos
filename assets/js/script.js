@@ -74,4 +74,20 @@ function ejercicio4() {
 function ejercicio5() {
     document.write("<h1>Ejercicio5</h1>");
     var nombre = prompt("Ingrese su nombre", "");
+    nombre = nombre.replace(/ /g, "");//se eliminan espacios
+    var arrayNombre = nombre.split("");//se transforma en arreglo
+    
+    var patronVocales = /[aeiouAEIOUáéíóú]$/;
+    var vocales = 0;
+    var consonantes = 0;
+
+    for (i = 0; i < arrayNombre.length; i++) {
+        if (patronVocales.test(arrayNombre[i])) {
+            vocales++;
+        } else {
+            consonantes++;
+        }         
+    }
+    alert("las vocales de tu nombre son--> " + vocales + "\n" + "las consonantes de tu nombre son--> " + consonantes);
+
 }
