@@ -56,6 +56,19 @@ function ejercicio3() {
 
 function ejercicio4() {
     document.write("<h1>Ejercicio4</h1>");
+    var frutas = [];
+    fruta1 = prompt("Ingrese la primera fruta", "");
+    fruta2 = prompt("Ingrese la segunda fruta", "");
+    fruta3 = prompt("Ingrese la tercera fruta", "");
+
+    frutas.push(fruta1, fruta2, fruta3);
+    for (i = 0; i <= frutas.length-1;i++) {
+        if (frutas[i] == 'manzana') {
+            continue;
+        }
+        document.write("<p>" + frutas[i] + "</p>");
+        console.log(frutas[i]);
+    }
 }
 
 function ejercicio5() {
