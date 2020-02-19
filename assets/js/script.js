@@ -27,7 +27,7 @@ function ejercicio1() {
         numero = prompt("Ingrese un numero del 1 al 100 :", "1");
     } while (numero > 100 || numero <1);
 
-    for (i = 0; i <= numero; i++) {
+    for (i = 0; i <= numero;i++) {
         document.write("<p>"+ i +"</p>");
         console.log(i);
     } 
@@ -62,15 +62,16 @@ function ejercicio4() {
     fruta3 = prompt("Ingrese la tercera fruta", "");
 
     frutas.push(fruta1, fruta2, fruta3);
-    for (i = 0; i <= frutas.length-1;i++) {
-        if (frutas[i] == 'manzana') {
+    for (let fruta of frutas) {
+        if (fruta == 'manzana') {
             continue;
         }
-        document.write("<p>" + frutas[i] + "</p>");
-        console.log(frutas[i]);
+        document.write("<p>" + fruta + "</p>");
+        console.log(fruta);
     }
 }
 
 function ejercicio5() {
     document.write("<h1>Ejercicio5</h1>");
+    var nombre = prompt("Ingrese su nombre", "");
 }
