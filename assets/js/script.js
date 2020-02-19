@@ -1,6 +1,5 @@
 (function () {
     solicitud();
-
 })();
 
 function solicitud() {
@@ -31,8 +30,7 @@ function ejercicio1() {
     for (i = 0; i <= numero; i++) {
         document.write("<p>"+ i +"</p>");
         console.log(i);
-    }
-    
+    } 
 }
 
 function ejercicio2() {
@@ -46,6 +44,14 @@ function ejercicio2() {
 
 function ejercicio3() {
     document.write("<h1>Ejercicio3</h1>");
+
+    matematicas = parseFloat(prompt("Ingrese promedio de notas de Matematicas", ""));
+    fisica = parseFloat(prompt("Ingrese promedio de notas de Fisica", ""));
+    ciencias = parseFloat(prompt("Ingrese promedio de notas de Ciencias", ""));
+
+    promedio = (matematicas + fisica + ciencias) /3;
+
+    document.write("<p>El promedio de los ramos (redondeado) es: " + Math.round(promedio)+"</p>");
 }
 
 function ejercicio4() {
